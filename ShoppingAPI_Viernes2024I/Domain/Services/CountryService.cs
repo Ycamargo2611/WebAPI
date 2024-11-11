@@ -1,5 +1,7 @@
 ﻿using ShoppingAPI_Viernes2024I.DAL.Entities;
 using ShoppingAPI_Viernes2024I.Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using ShoppingAPI_Viernes2024I.DAL;
 
 namespace ShoppingAPI_Viernes2024I.Domain.Services
 {
