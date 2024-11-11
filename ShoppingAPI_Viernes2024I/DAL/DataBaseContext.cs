@@ -1,5 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ShoppingAPI_Viernes2024I.DAL.Entities;
+using System.Collections.Generic;
+using System.Data.Entity;
+using WebAPI.ShoppingAPI_Viernes2024I.DAL.Entities;
 
 namespace ShoppingAPI_Viernes2024I.DAL
 {
@@ -17,6 +20,7 @@ namespace ShoppingAPI_Viernes2024I.DAL
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Country>().HasIndex(c => c.Name).IsUnique();// creo indice del campo name para tabla countries
+            modelBuilder.Entity<State>().HasIndex("Name", "CountryId").IsUnique();//Indice compuesto
         }
 
         #region DbSets
@@ -25,6 +29,8 @@ namespace ShoppingAPI_Viernes2024I.DAL
 
 
         #endregion
+        public DbSet<Country> Countries { get; set;}
+        public DbSet<State> States { get; set }
 
     }
 
