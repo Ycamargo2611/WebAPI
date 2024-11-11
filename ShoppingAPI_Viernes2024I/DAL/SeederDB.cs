@@ -28,6 +28,8 @@ namespace WebAPI.ShoppingAPI_Viernes2024I.DAL
             //A partir de acá creamos los metodos para prepoblar la BD
             await PopulateCountriesAsync();
 
+            await _context.SaveChangesAsync(); //Realiza los guardados en la BD
+
         }
 
         #region Private Methos
