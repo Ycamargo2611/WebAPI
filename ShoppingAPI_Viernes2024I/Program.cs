@@ -21,8 +21,6 @@ builder.Services.AddSingleton<ICountryService, CountryService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
-
 var app = builder.Build();
 
 SeederData();
