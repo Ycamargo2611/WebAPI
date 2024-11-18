@@ -23,7 +23,7 @@ namespace WebAPI.ShoppingAPI_Viernes2024I.DAL
             //Primero agregamos un metodo propio de EntityFramework que hace las veces de comando "update-database"
             //En otras palabras, crea la BD inmediatamenete ponga en ejecución la API
 
-            await _context.Database.EnsureCreateAsync();
+            await _context.Database.EnsureCreatedAsync();
 
             //A partir de acá creamos los metodos para prepoblar la BD
             await PopulateCountriesAsync();

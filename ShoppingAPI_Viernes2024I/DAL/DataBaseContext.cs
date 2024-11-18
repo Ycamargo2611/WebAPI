@@ -1,7 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ShoppingAPI_Viernes2024I.DAL.Entities;
-using System.Collections.Generic;
 using System.Data.Entity;
+using System.Collections.Generic;
+
 using WebAPI.ShoppingAPI_Viernes2024I.DAL.Entities;
 
 namespace ShoppingAPI_Viernes2024I.DAL
@@ -29,8 +30,8 @@ namespace ShoppingAPI_Viernes2024I.DAL
 
 
         #endregion
-        public DbSet<Country> Countries { get; set;}
-        public DbSet<State> States { get; set }
+        public DbSet<Country> Country { get; set;}
+        public DbSet<State> States { get; set;}
 
     }
 

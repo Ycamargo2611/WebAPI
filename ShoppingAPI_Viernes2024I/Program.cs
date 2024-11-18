@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ShoppingAPI_Viernes2024I.DAL;
+using ShoppingAPI_Viernes2024I.Domain.Interfaces;
+using ShoppingAPI_Viernes2024I.Domain.Services;
 using WebAPI.ShoppingAPI_Viernes2024I.DAL;
 
 var builder = WebApplication.CreateBuilder(args);
